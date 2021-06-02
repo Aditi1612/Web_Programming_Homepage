@@ -1,39 +1,140 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="user-scalable=no,initial-scale=1">
-        <title>About India</title>
-        <meta content="About India" name="title">
+        <title>Aditi's Homepage</title>
+        <meta content="ADITI | Personal Website" name="title">
         <style>
             img{
                 float:left;
             }
-            .Intro h2{
-                color:chocolate;
-            }
-            .Intro {
-                color: blue;
             
-                margin: 20px;
-                padding: 20px;
-        </style>
+            #Introducton{
+                color: blueviolet;
+            
                 
+            }
+            #About_India{
+                color: Brown;
+            
+            }
+            #Interests{
+                color: Brown;
+            
+                
+            }
+
+            div{
+                height: 200px;
+            }
+            .noDisplay{
+                display: none;
+            }
+
+            h1{
+                color:brown;
+
+            }
+            
+            h2{
+                color:lightsalmon;
+
+            }
+            #Interests>h1{
+                color: blueviolet;
+            }
+            #Interests>h2{
+                color:orange;
+            }
+            #About_India>h1{
+                color: red;
+            }
+            #About_India>h2{
+                color: rebeccapurple;
+            }
+            li{
+                float: right;
+                margin: 30 px;
+                padding - left: 30 em;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.intro').click(function(){
+                    $('#Introduction').removeClass('noDisplay');
+                    $('#About_India').addClass('noDisplay');
+                    $('#Interests').addClass('noDisplay');
+                });
+                $('.ind').click(function(){
+                    $('#Introduction').addClass('noDisplay');
+                    $('#About_India').removeClass('noDisplay');
+                    $('#Interests').addClass('noDisplay');
+                });
+                $('.inte').click(function(){
+                    $('#Introduction').addClass('noDisplay');
+                    $('#About_India').addClass('noDisplay');
+                    $('#Interests').removeClass('noDisplay');
+                });
+
+            });
+        </script>
     </head>
-<body>
-  
-<span class="Intro">
-    <h1><b><i>
-        About India:
-    </i></b></h1>
-    <p><h2>India is a independent, democratic, and a united county.Here people of different colors, religion, cast,gender, and clothes.India has different people living in it but still it is a united county.
+    <body>
+        
+        <li>
+            
+            <li><a href="#Interests"class ='inte'>Interests&nbsp;&nbsp;                </a></li>
+            <li><a href="#About_India" class='ind'>About India&nbsp;&nbsp;        </a></li>
+         
+            
+            <li><a href="#Introduction" class='intro'>Intoduction&nbsp;&nbsp;          </a></li>
+            
+        </li>
 
-Here different people celebrate different different festivals together unitedly.People are enjoying all cultural activities, and cultural food, dresses, and different things. India is the second highest populated country but still is United.
+        <img src="C:\Users\diwak\OneDrive\Desktop\Aditi.png" width="20%" height="50%">
 
-Sometimes people of different religion have a conflict between them and sometimes due to this people who are innocent are been affected but this conflict are solved by the court.Here all people are following the rules and regulations. The Indian Constitution has controlled India
 
-The President , Prime minister and all other people here who r given responsibility are doing their duty well.
+        <div id="Intoduction" >
+            <h1><b><i>
+                Introduction:
+            </i></b></h1>
+            <p><h2>I am from India. I am currently pursing my Bachelor's degree in the field of Computer Engineering from Korea. I am a second year student in Kangwon National University (one of the national universities in Korea).</h2></p>
 
-So lndia is a smooth working country.</h2></p>
-</span>
-</body>
+        </div>
+
+        <div id="About_India" class='noDisplay'>
+            <h1><b><i>
+                About India:
+            </i></b></h1>
+            <p><h2>India is a independent, democratic, and a united county.Here people of different colors, religion, cast,gender, and clothes.India has different people living in it but still it is a united county.
+        
+        Here different people celebrate different different festivals together unitedly.People are enjoying all cultural activities, and cultural food, dresses, and different things. India is the second highest populated country but still is United.
+        
+        Sometimes people of different religion have a conflict between them and sometimes due to this people who are innocent are been affected but this conflict are solved by the court.Here all people are following the rules and regulations. The Indian Constitution has controlled India
+        
+        The President , Prime minister and all other people here who r given responsibility are doing their duty well.
+        
+        So lndia is a smooth working country.</h2></p>
+
+        </div>
+
+        <div id="Interests" class='noDisplay'>
+            <h1><b><i>
+                Interests: 
+            </i></b></h1>
+            <p><h2>I have a lot of interests in the computer network, Curious to know how the architecture is of sending data from one place to the other. </h2></p>
+            <br>
+            <p><h2>I also have interests in the field of Machine Learning. I am currently aiming to learn Reinforcement Learning. </h2></p>
+            <h1><b><i>
+                Other Interests:
+            </i></b></h1>
+            <p><h2>My hobbies are drawing, painting and craft works. </h2></p>
+
+        </div>
+
+        
+        
+    </body>
 </html>
